@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukiTea</title>
+    <link rel="stylesheet" href="history-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="hero">
+        <nav>
+            <h2 class="logo"><a href="index.html">Luki<span>Tea</span></a></h2>
+            <ul>
+                <li><a href="index.html">Quiz</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h1 class="history-text">How Tea Spread Across The World</h1>
+        <div class="history-image" id="history-image" >
+            <img id="image-history" src="images/first.png" alt="" width="1027" height="559">
+        </div>
+        <input type="range" class="history-range" id="history-range" min="1" max="10" value="0">
+        
+
+
+
+    </article>
+
+</body>
+<script>
+    const rangeHistory = document.getElementById("history-range")
+    const imageToChange = document.getElementById("image-history")
+    rangeHistory.addEventListener('input', changeImage, false)
+
+    function changeImage(){
+        if(rangeHistory.value == 1){
+            imageToChange.src = "images/first.png"
+        } else if (rangeHistory.value == 2){
+            imageToChange.src = "images/second.png"
+        }
+        else if (rangeHistory.value == 3){
+            imageToChange.src = "images/third.png"
+        }
+        else if (rangeHistory.value == 4){
+            imageToChange.src = "images/fourth.png"
+        }
+        else if (rangeHistory.value == 5){
+            imageToChange.src = "images/fifth.png"
+        }
+        else if (rangeHistory.value == 6){
+            imageToChange.src = "images/sixth.png"
+        }
+        else if (rangeHistory.value == 7){
+            imageToChange.src = "images/seventh.png"
+        }
+        else if (rangeHistory.value == 8){
+            imageToChange.src = "images/eightth.png"
+        }else if (rangeHistory.value == 9){
+            imageToChange.src = "images/ninthth.png"
+        }
+        else if (rangeHistory.value == 10){
+            imageToChange.src = "images/tenth.png"
+        }
+        
+        
+    }
+
+
+
+</script>
+
+</html>

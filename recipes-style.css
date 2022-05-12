@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+}
+a {
+   text-decoration: none;
+}
+body {
+    background-image: url(images/tea.jpg);
+    animation: transition 0.75s;
+}
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: rotateX(-10);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+.hero {
+    height: 10vh;
+    width: 100%;
+    background: none;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1p;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #3CA55C;
+    transition: .4s;
+}
+
+span {
+    color: #3CA55C;
+}
+article h3{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+article h3:hover{
+    color: #3CA55C;
+    transition: .4s;
+}
+
+
+article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 1%;
+    flex-wrap: wrap;
+    gap: 0.1em;
+    margin-bottom: 3%;
+}
+article > * {
+    flex: 0 0 17.5%;
+}
+article div{
+    text-align: center;
+    
+}
+article img:hover{
+    box-shadow: 1px 1px 1px 1px #3CA55C;
+}
+
+article img{
+    border-radius: 7.5px;
+}
